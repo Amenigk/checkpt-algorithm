@@ -1,0 +1,15 @@
+Algorithm Read sentence
+Var
+s:STRING;
+i,c,v:INTEGER:=0;
+BEGIN
+WHILE (s[i] <> "." ) DO
+ IF (s[i]==" ") THEN  c:=c+1;
+ ELSEIF (s[i]=="a" OR s[i]=="e" OR s[i]=="i" OR s[i]=="o" OR s[i]=="u" ) THEN v:=v+1; 
+ END_IF
+ i:=i+1;
+ END_WHILE
+ Write(i) Write("is the length of the sentence") 
+ Write(c) Write("is the number of the words of the sentence") 
+ Write(v) Write("is the numberof vowels in the sentence") 
+ END  
